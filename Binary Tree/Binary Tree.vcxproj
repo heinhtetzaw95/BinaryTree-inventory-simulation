@@ -112,6 +112,7 @@
   <ItemGroup>
     <ClCompile Include="tree.cpp" />
     <ClCompile Include="tree_functions.cpp" />
+    <ClCompile Include="tree_helpers.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="output_sample.txt" />

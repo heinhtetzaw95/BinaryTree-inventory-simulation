@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-#include "tree_functions.cpp"
+#include "tree_header.h"
+#include "tree_helpers.cpp"
 
 using namespace std;
 
@@ -9,8 +10,8 @@ int main() {
 			//prepare for read in each line of given input file
 	string temp;
 	char command;
-
-			//create a binary tree from the tree class
+	
+			//create a binary tree from the tree class to use in main
 	tree theTree;
 
 			//read in the very first line and extract the command
@@ -26,8 +27,6 @@ int main() {
 		case 'I':
 					//insert an item for command 'I'
 
-			cout << "Add" << endl;
-
 			getline(input, theItem.ID, '\n');
 			getline(input, theItem.description, '\n');
 			getline(input, temp, '\n');
@@ -35,9 +34,11 @@ int main() {
 			getline(input, temp, '\n');
 			theItem.onOrder = stoi(temp);
 
-//			if (theTree.add(theItem))
+			if (theTree.add(theItem)) 
 				print ('A', true, theItem);
-//			else print('A', false, theItem);
+			else print('A', false, theItem);
+
+			print('-');
 
 			break;
 
@@ -47,9 +48,10 @@ int main() {
 			getline(input, theItem.ID, '\n');
 			getline(input, theItem.description, '\n');
 
-//			if (del(theItem))
-				print('D', true, theItem);
-//			else print('D', false, theItem);
+			if (theTree.del(theItem)) print('D', true, theItem);
+			else print('D', false, theItem);
+
+			print('-');
 
 			break;
 
@@ -62,15 +64,18 @@ int main() {
 			if (temp[0] == 'E') {
 
 				print('H');
-				print('E');
+				print('E', &theTree);
 				
 			}
 					//print one particular node for 'N'
 			else if (temp[0] == 'N') {
 				getline(input, theItem.ID, '\n');
-
-				print('H');
-				print('N', true, theItem);
+				item *found = theTree.search(theItem);
+				if ( found != NULL) {
+					print('H');
+					print('N', true, *found);
+				}
+				else print('N', false, theItem);
 
 			}
 
@@ -87,6 +92,8 @@ int main() {
 				print('S', true, theItem);
 //			else print('S', false, theItem);
 
+			print('-');
+
 			break;
 
 		case 'O':
@@ -99,6 +106,8 @@ int main() {
 //			if (order(theItem))
 				print('O', true, theItem);
 //			else print('O', false, theItem);
+
+			print('-');
 
 			break;
 
@@ -113,6 +122,8 @@ int main() {
 				print('R', true, theItem);
 //			else print('R', false, theItem);
 
+			print('-');
+
 			break;
 
 		}
@@ -121,7 +132,9 @@ int main() {
 		command = temp[0];
 	}
 
-//	cin.get();
+	cout << "\nEnd: Code Run Success!" << endl;
+
+	cin.get();
 	return 0; 
 
 }

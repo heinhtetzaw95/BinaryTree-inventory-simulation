@@ -29,6 +29,10 @@ public:
 	bool sell(item);
 	bool order(item);
 	bool receive(item);
+	bool patchParent(item*, item*, item*);
+
+	item * search(item);
+	item * getRoot() { return root; };
 
 };
 
