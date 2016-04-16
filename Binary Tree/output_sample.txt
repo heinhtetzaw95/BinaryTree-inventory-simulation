@@ -1,0 +1,61 @@
+Item ID Number OP123 successfully entered into database.
+--------------------------------------------------------------------------------
+Item ID Number FH473 successfully entered into database.
+--------------------------------------------------------------------------------
+Item ID Number RB902 successfully entered into database.
+--------------------------------------------------------------------------------
+Item ID Number FC881 successfully entered into database.
+--------------------------------------------------------------------------------
+Item ID Number DP721 successfully entered into database.
+--------------------------------------------------------------------------------
+                       JAKE’S HARDWARE INVENTORY REPORT
+    Item               Item                           Quantity      Quantity
+  ID Number         Description                       On Hand       On Order
+--------------------------------------------------------------------------------
+Printing All
+New Page
+Quantity on Order For item (FH473) successfully updated.
+--------------------------------------------------------------------------------
+Item ID Number RB702 successfully entered into database.
+--------------------------------------------------------------------------------
+                       JAKE’S HARDWARE INVENTORY REPORT
+    Item               Item                           Quantity      Quantity
+  ID Number         Description                       On Hand       On Order
+--------------------------------------------------------------------------------
+FH47311040
+Printing THIS Item!
+--------------------------------------------------------------------------------
+Quantity on Order For item (DP721) successfully updated.
+--------------------------------------------------------------------------------
+Quantity on Hand for item (RB902) successfully updated.
+--------------------------------------------------------------------------------
+                       JAKE’S HARDWARE INVENTORY REPORT
+    Item               Item                           Quantity      Quantity
+  ID Number         Description                       On Hand       On Order
+--------------------------------------------------------------------------------
+Printing All
+New Page
+Item ID Number RE702 successfully entered into database.
+--------------------------------------------------------------------------------
+Item ID Number  DN022 successfully deleted from database.
+--------------------------------------------------------------------------------
+Quantity on Hand for item (RB902) successfully updated.
+--------------------------------------------------------------------------------
+Item ID Number  OP123 successfully deleted from database.
+--------------------------------------------------------------------------------
+Item ID Number  DE456 successfully deleted from database.
+--------------------------------------------------------------------------------
+Quantity on Order For item (HF473) successfully updated.
+--------------------------------------------------------------------------------
+Item ID Number EM543 successfully entered into database.
+--------------------------------------------------------------------------------
+Item ID Number  DR356 successfully deleted from database.
+--------------------------------------------------------------------------------
+Item ID Number  FH473 successfully deleted from database.
+--------------------------------------------------------------------------------
+                       JAKE’S HARDWARE INVENTORY REPORT
+    Item               Item                           Quantity      Quantity
+  ID Number         Description                       On Hand       On Order
+--------------------------------------------------------------------------------
+Printing All
+New Page
