@@ -7,32 +7,37 @@
 using namespace std;
 
 			//create variables to access input and output files
-	static ifstream input("tree_sample.txt", ios::in);
+	static ifstream input("tree_in.txt", ios::in);
 	static ofstream output("output_sample.txt", ios::out);
 
+			//construct a structure for items
 struct item {
 	string ID, description;
 	int onHand, onOrder, quantity;
 
+			//include left and right pointers for each node
 	item *left, *right;
 };
 
 class tree {
+		//declare private variables
 private:
 	item *root;
 
+		//declare public functions
 public:
-	tree() { root = NULL; }
+	tree() { root = NULL; }						//make constructor function
 
-	bool add(item);
-	bool del(item);
-	bool sell(item);
-	bool order(item);
-	bool receive(item);
-	bool patchParent(item*, item*, item*);
+	bool add(item);								//make function to add nodes
+	bool del(item);								//make function to delete nodes
+	bool sell(item);							//make function to simulate selling items
+	bool order(item);							//make function to simulate ordering more items
+	bool receive(item);							//make function to simulate reciving orders
 
-	item * search(item);
-	item * getRoot() { return root; };
+	void patchParent(item*, item*, item*);		//make function to rearrange the nodes when delete
+
+	item * search(item);						//make function for searching if an item exists
+	item * getRoot() { return root; };			//make function for identifying the root node
 
 };
 
