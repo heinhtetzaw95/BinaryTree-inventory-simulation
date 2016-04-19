@@ -8,7 +8,7 @@ using namespace std;
 
 			//create variables to access input and output files
 	static ifstream input("tree_in.txt", ios::in);
-	static ofstream output("output_sample.txt", ios::out);
+	static ofstream output("output.txt", ios::out);
 
 			//construct a structure for items
 struct item {

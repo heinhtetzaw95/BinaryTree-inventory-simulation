@@ -115,6 +115,7 @@
     <ClCompile Include="tree_helpers.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="output.txt" />
     <Text Include="output_sample.txt" />
     <Text Include="tree_sample.txt" />
     <Text Include="tree_in.txt" />
